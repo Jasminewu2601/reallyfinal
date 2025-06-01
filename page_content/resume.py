@@ -28,6 +28,6 @@ def resume_page():
     # 4) 内嵌预览
     img_path = os.path.join("static", "images", "wdj1.png")
     if os.path.exists(img_path):
-        st.image(img_path, caption="My Resume", use_column_width=True)
+        st.image(img_path, caption="My Resume", use_container_width=True)
     else:
         st.warning(f"尚未找到预览图片：{img_path}，请确保已上传 `resume.png`。")
